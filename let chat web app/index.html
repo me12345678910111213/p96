@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <script src="kwitter.js"></script>
+    </head>
+    <body>
+<input type="text" id="User_name" class="form-control" placeholder="user name">
+<button id="login_button" class="btn btn-primary" onclick="addUser()">log in</button>
+<button id="logout_button" class="btn btn-primary" onclick="logout()">log in</button>
+<h4 id="UserName"></h4>
+<input id="RoomName">#
+<button id="Add_Room" class="btn btn-primary" onclick="addRoom()">add room</button>
+<h4 id="Room Names"></h4>
+<div class="room_name" id="+Room_names+" onclick="redirectToRoomName(this.id)">+Room_names+></div><hr>"
+<div class="container">
+	<button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+	<center>
+		<h1 class="header">	
+			Kwitter	
+			<sup>
+				<img src="m2.png">
+			</sup>
+		</h1>
+		<div style="text-align: left;margin-bottom: 70px;"> </div>
+	</center>
+</div>
+
+<center>
+	<div class="input_div_message_page">
+		<label>Send:</label>
+		<input type="text" id="msg" class="form-control" placeholder = "Message"
+		<button onclick="send()" class="btn btn-success">Send</button>
+	</div>
+</center>
+    </body>
+</html>
